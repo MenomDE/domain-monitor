@@ -7,7 +7,8 @@ RUN mkdir app
 # Setup dependencies
 RUN apk add --no-cache nodejs npm
 # Install templ
-RUN go install github.com/a-h/templ/cmd/templ@latest
+# RUN go install github.com/a-h/templ/cmd/templ@latest
+RUN go install github.com/a-h/templ/cmd/templ@v0.2.793
 
 # Copy source (see .dockerignore for exclusions)
 COPY . .
